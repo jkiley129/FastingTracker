@@ -91,3 +91,35 @@ iOSInjectionProject/
 
 # Mac
 .DS_Store
+
+# Claude Code: personal settings and session worktrees
+.claude/settings.local.json
+.claude/worktrees/
+
+# Local-only agent skills, installed per checkout by
+# scripts/install-local-skills.sh and never committed: their licenses do
+# not permit redistribution. The script refuses to install any skill this
+# block does not cover.
+# Apple (Xcode 27 `xcrun agent skills export`)
+.claude/skills/adopt-c-bounds-safety/
+.claude/skills/app-intents-specialist/
+.claude/skills/app-intents-whats-new-27/
+.claude/skills/audit-xcode-security-settings/
+.claude/skills/building-document-based-swiftui-applications/
+.claude/skills/device-interaction/
+.claude/skills/modernize-tests/
+.claude/skills/swiftui-specialist/
+.claude/skills/swiftui-whats-new-27/
+.claude/skills/uikit-app-modernization/
+# OpenAI Build iOS Apps plugin (unlicensed; pinned SHA in the script)
+.claude/skills/ios-app-intents/
+.claude/skills/ios-debugger-agent/
+.claude/skills/ios-ettrace-performance/
+.claude/skills/ios-memgraph-leaks/
+.claude/skills/ios-simulator-browser/
+.claude/skills/swiftui-liquid-glass-openai/
+.claude/skills/swiftui-performance-audit/
+.claude/skills/swiftui-ui-patterns/
+.claude/skills/swiftui-view-refactor/
+# merowing.info general.md (unlicensed; sha256 pinned in the script)
+.claude/skills/merowing-swift-engineering/
